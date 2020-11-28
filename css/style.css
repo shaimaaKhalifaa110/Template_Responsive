@@ -1,0 +1,738 @@
+
+/*
+=============================
+		Public Style
+=============================
+
+*/
+
+/*
+
+//Extra Small devices (portrait phones, less than 576px)
+@media(max-width:575px){.......}
+
+
+//small devices(landscape phones, less than 768px)
+@media (max-width:767px){.......}
+
+//Medium devices(tablets, less than 992px)
+@media (max-width:991px){.......}
+
+//large devices(desktop, less than 1200px)
+@media (max-width:1199px){......}
+
+
+*/
+@import url(link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet");
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Abel', sans-serif;
+	text-transform: capitalize;
+
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+.pd-y{
+	padding: 120px 0;
+}
+
+a{
+	text-decoration: none;
+	color: #eb5424;
+}
+/*
+=============================
+	Navbar Style
+=============================
+*/
+
+.navbar{
+	padding: 20px 0;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #222222;
+
+}
+
+.navbar .logo{
+	width: 50%;
+	float: left;
+}
+.navbar .logo .logo-text{
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+.navbar input, .navbar label{
+	position: absolute;
+	top: 15px;
+	right: 25px;
+}
+.navbar input{
+	display: none;
+}
+.navbar label{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-image: url('../images/Navbar/open.png');
+	background-size: cover;
+	padding:20px;
+	cursor: pointer;
+}
+
+.navbar input:checked ~ .ul-list{
+	display: block;
+}
+.navbar input:checked ~ label{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-image: url('../images/Navbar/close.png');
+	background-size: cover;
+	padding:20px;
+	cursor: pointer;
+
+}
+.navbar .ul-list{
+	width: 50%;
+	float: left;
+	list-style: none;
+}
+
+.navbar .ul-list .list-item{
+	display: inline-block;
+
+
+}
+.navbar .ul-list .list-item a{
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 10px 15px;
+	color: #222222;
+}
+
+.navbar .ul-list .list-item a:hover{
+		color: #eb5424;
+	}
+
+/* Media for Navbar Style */
+
+@media(min-width: 992px){
+	.navbar label{
+		display: none;
+	}
+}
+@media (max-width: 1268px){
+	.navbar .logo{
+		width: 100%;
+		float: none;
+	}
+
+	.navbar .ul-list{
+		width: 100%;
+		float: none;
+		margin-top: 10px;
+		display: none;
+	}
+
+	.navbar .ul-list .list-item{
+		display: block;
+		text-align: center;
+	}
+
+	
+}
+
+
+
+/*
+=============================
+	Home Style
+=============================
+*/
+
+.home{
+	height: 500px;
+	background-image: url('../images/Home/home-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	position: relative;
+}
+.home-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.home-content .home-title{
+	font-size: 60px;
+	font-weight: bold;
+	color: #5e5e5e;
+	margin-bottom: 20px;
+}
+
+.home-content .home-info{
+	font-size: 30px;
+	color: #eb5424;
+	margin-bottom: 20px;
+}
+
+.home-content .home-desc{
+	font-size: 18px;
+	line-height: 1.5;
+	color: #5e5e5e;
+	margin-bottom: 20px;
+}
+.home-content .home-btn{
+	background-color: #eb5424;
+	padding: 15px 30px;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+
+}
+
+.home-content .home-btn:hover{
+	background-color: #ffffff;
+	border: 1px solid #eb5424;
+	color: #eb5424
+}
+
+
+/* Media For Home Style*/
+
+@media(max-width: 768px){
+	.home-content .home-title{
+		font-size: 40px;
+	}
+
+.home-content .home-info{
+	font-size: 25px;
+}
+
+.home-content .home-desc{
+	font-size: 14px;
+	
+}
+}
+
+
+/*
+=============================
+	Work Style
+=============================
+*/
+.work{
+	overflow: hidden;
+}
+.work .work-title{
+	font-size: 60px;
+}
+.work .work-title span{
+	font-weight: bold;
+}
+.work-item{
+	margin-top: 20px;
+	float: left;
+	width: 30%;
+	border: 1px solid #888;
+	text-align: center;
+	height: auto;
+	padding: 100px 0;
+	margin-left: 5%;
+}
+.work .normal{
+	margin-left: 0;
+}
+.work-item .icon{
+	color: #eb5424;
+	margin-bottom: 20px;
+}
+.work-item .work-head{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.work-item .line{
+	width: 60%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.work-item .work-desc{
+	font-size: 14px;
+	color: #888;
+	padding: 20px;
+
+}
+
+
+/*Media For About Style*/
+
+@media(max-width: 768px){
+	.work-item{
+		width: 47%;
+	}
+	.work-item .last{
+		margin-left: 0;
+	}
+}
+
+
+@media(max-width: 575px){
+	.work-item{
+		width: 100%;
+		float: none;
+		margin: 0;
+		margin-bottom:10px;
+	}
+}
+
+/*
+=============================
+	Portfolio Style
+=============================
+*/
+.portfolio{
+	overflow: hidden;
+}
+
+.portfolio .portfolio-title{
+	text-align: center;
+	font-size: 35px;
+}
+
+.portfolio span{
+	color: #eb5424;
+	font-weight: normal;
+}
+
+.portfolio .portfolio-list{
+	list-style: none;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.portfolio .portfolio-item{
+	display: inline-block;
+	width: 100px;
+	text-transform: capitalize;
+	padding: 10px;
+}
+
+.portfolio .portfolio-item.active{
+	background-color: #eb5424;
+	color: #fff;
+}
+
+.portfolio .box div{
+	width: 25%;
+	float: left;
+	font-size: 0;
+	position: relative;
+}
+
+.portfolio .box div img{
+	width: 100%;
+}
+
+.portfolio .box div .overlay{
+	font-size: 15px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	background-color: rgba(235,84,36,0.5);
+	opacity: 0;
+	transition: .5s;
+}
+
+.portfolio .box div .overlay span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	display: block;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: 2px solid #eb5424;
+}
+
+.portfolio .box div:hover .overlay{
+	opacity: 1;
+}
+
+/* Media For Portfolio Style*/
+
+@media(max-width: 575px){
+	
+	.portfolio .portfolio-item{
+		display: block;
+		text-align: center;
+		margin: auto;
+}
+	.portfolio .box div{
+		width: 100%;
+	}
+}
+@media(max-width: 768px){
+	.portfolio .box div{
+		width: 50%;
+	}
+}
+
+
+
+/*
+=============================
+	Profile_Skills Style
+=============================
+*/
+
+.profile_skills{
+	padding:50px 0;
+	overflow: hidden;
+}
+
+.profile_skills .profile{
+	width: 50%;
+	float: left;
+}
+
+.profile .profile-list .list-item{
+	list-style: none;
+	margin-bottom: 8px;
+}
+
+.profile .profile-list .list-item span{
+	width: 100px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.profile .profile-list .list-item span.web{
+	font-weight: normal;
+	color: #eb5424;
+}
+.profile_skills .skills{
+	width: 50%;
+	float: left;
+}
+.profile_skills .profile-title{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.profile_skills .skills .skill-desc{
+	font-size: 15px;
+	color: #888;
+	line-height: 1.5;
+	margin-bottom: 20px;
+
+}
+
+.profile_skills .skills .bar{
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+.profile_skills .skills .bar .title{
+	float: left;
+}
+.profile_skills .skills .bar .pres{
+	float: right;
+	margin-right: 100px;
+}
+
+.profile_skills .skills .bar .parent{
+	height: 2px;
+	clear: both;
+	position: relative;
+	top: 5px;
+}
+.profile_skills .skills .bar .parent span{
+	background-color: #eb5424;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.profile_skills .skills .bar .parent span.sp1{
+	display: block;
+	width: 100%;
+}
+.profile_skills .skills .bar .parent span.sp2{
+	display: block;
+	width: 90%;
+}
+.profile_skills .skills .bar .parent span.sp3{
+	display: block;
+	width: 80%;
+}
+
+
+
+/* Media For Profile Style*/
+
+@media(max-width: 575px){
+	.profile_skills .profile{
+		margin-bottom: 20px;
+	}
+
+	.profile_skills .profile,
+	.profile_skills  .skills{
+		width: 100%;
+		float: none;
+		
+}
+	}
+
+
+/*
+=============================
+	Creative Style
+=============================
+*/
+.creative{
+	height: 620px;
+	background-image: url('../images/creative/about-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.creative .creative-content{
+	padding-top: 100px;
+	width: 50%;
+	float: right;
+}
+
+.creative .creative-content .info-title{
+	font-weight: bold;
+	font-size: 50px;
+	text-transform: capitalize;
+
+}
+.creative .creative-content .info-title span{
+	font-weight: normal;
+}
+
+.creative .creative-content .info-dir{
+	font-size: 40px;
+	color: #eb5424;
+	text-transform: capitalize;
+}
+
+.creative .creative-content .info-desc{
+	color: #000;
+	line-height: 1.8;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+
+}
+
+/* Media For Creative Style*/
+@media(max-width: 797px){
+	.creative{
+		height: auto;
+	}
+
+	.creative .creative-content{
+		width: 100%;
+		float: none;
+		padding-top: 10px;
+	}
+}
+
+
+
+/*
+=============================
+	Social Style
+=============================
+*/
+.social-media{
+	overflow: hidden;
+	height: auto;
+}
+
+.social-media .social{
+	width: 33.3333%;
+	float: left;
+	padding: 100px 0 100px 60px;
+
+}
+
+.social-media .social.face{
+	background-color: #3b5998;
+}
+
+.social-media .social.twit{
+	background-color: #498cbf;
+}
+
+.social-media .social.pin{
+	background-color: #cc2127;
+}
+
+.social-media .social .icon{
+	width: 40px;
+	height: 40px;
+	background-color: #ffffff;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+	margin-right: 10px;
+}
+
+.social-media .social p{
+	font-weight: bold;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.social-media .social p span{
+	display: block;
+	margin-bottom: 8px;
+}
+
+.social-media .social p span.info2{
+	font-weight: normal;
+}
+
+/*Media For Social-Media Style*/
+
+@media(max-width: 919px){
+	.social-media .social{
+		width:100%;
+		float: none;
+		padding: 100px 0 100px 60px;
+		overflow: hidden;
+
+}
+}
+
+/*
+=============================
+	Drop Style
+=============================
+*/
+.drop{
+	padding:50px 0;
+	text-align: center;
+}
+ .drop .drop-title{
+
+ 	font-size: 60px;
+ 	margin-bottom: 30px;
+ }
+
+.drop .drop-title span{
+	font-weight: normal;
+}
+
+.drop form{
+	width: 70%;
+	margin: auto;
+}
+.drop form input{
+	margin-bottom: 10px;
+	padding: 5px;
+}
+.drop form .form-input{
+	overflow: hidden;
+}
+.drop form .form-input input{
+	width: 49%;
+
+}
+.drop form .form-input input[type=text]{
+	float: left;
+}
+.drop form .form-input input[type=email]{
+	float: right;
+}
+
+.drop form input.sub{
+	width: 100%;
+
+}
+
+.drop form textarea{
+	width: 100%;
+	background-color: #ccc;
+
+}
+
+
+.drop form input[type=submit]{
+	width: 60%;
+	background: #fff;
+	border: 1px solid  #ccc;
+	color: #888;
+	cursor: pointer;
+}
+
+/* Media For  Drop Style*/
+@media(max-width: 575px){
+	.drop .drop-title{
+		font-size: 40px;
+	}
+	.drop form .form-input input{
+		width: 100%;
+	}
+}
+
+
+/*
+=============================
+	Footer Style
+=============================
+*/
+.footer{
+	text-align: center;
+	padding:10px 0;
+	background-color: #000;
+}
+
+.footer .footer-desc{
+	color: #ffffff;
+	margin: 0;
+}
+
+
+
+/***************END Style Css-Css3****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
